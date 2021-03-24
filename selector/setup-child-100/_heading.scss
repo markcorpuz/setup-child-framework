@@ -1,0 +1,104 @@
+/*  SETUP-CHILD | 1.0.0 | 210311 | setup-be/selectors/setup-child-100/heading.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// EXTEND
+
+	%heading-demo {
+		border-bottom: 1px solid #eee;
+		@extend %padding-smaller-bottom !optional;
+		@extend %margin-large2x-top !optional;
+		@extend %margin-medium-bottom !optional;
+	}
+
+	%heading-demo-full-width {
+		@extend %padding-smaller-left !optional;
+		margin-right: calc(50% - 50vw);
+		margin-left: calc(50% - 50vw);
+	    max-width: 100vw;
+	    width: 100vw;
+	}
+
+	%heading-ref {
+		color: $grey_5;
+		font-size: 0.75rem;
+		border-left: 4px solid $grey_5;
+		padding-left: 0.5rem;
+		margin-bottom: 0;
+		@extend %margin-large2x-top !optional;
+	}
+
+	%heading-ref-footer {
+		border-left: 0;
+		padding: 0.5rem;
+		margin-top: 0;
+		text-align: center;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// DEMO
+
+	.heading-demo,
+	p.heading-demo {
+		@extend %heading-demo !optional;
+	}
+
+	.heading-demo.full-width,
+	p.heading-demo.full-width {
+	    @extend %heading-demo !optional;
+	    @extend %heading-demo-full-width !optional;
+	}
+
+	.heading-demo.margin-zero,
+	p.heading-demo.margin-zero,
+	.heading-demo.full-width.margin-zero,
+	p.heading-demo.full-width.margin-zero,
+	.heading-ref.margin-zero,
+	p.heading-ref.margin-zero, {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.heading-demo.margin-zero-top,
+	p.heading-demo.margin-zero-top,
+	.heading-demo.full-width.margin-zero-top,
+	p.heading-demo.full-width.margin-zero-top,
+	.heading-ref.margin-zero-top,
+	p.heading-ref.margin-zero-top, {
+		margin-top: 0;
+	}
+
+	.heading-demo.margin-zero-bottom,
+	p.heading-demo.margin-zero-bottom,
+	.heading-demo.full-width.margin-zero-bottom,
+	p.heading-demo.full-width.margin-zero-bottom,
+	.heading-ref.margin-zero-bottom,
+	p.heading-ref.margin-zero-bottom {
+		margin-bottom: 0;
+	}
+
+	.heading-demo.border-flip,
+	p.heading-demo.border-flip {
+		border-top: 0;
+		border-top: 1px solid #eee;
+		padding-top: 0;
+		@extend %padding-smaller-top !optional;
+	}
+
+	// INTRO
+	
+	.heading-intro,
+	p.heading-intro {
+		@extend %margin-large2x-bottom !optional;
+		@extend %lineheight-default !optional;
+	}
+
+	// SPEC
+
+	.heading-ref,
+	p.heading-ref {
+		@extend %heading-ref !optional;
+	}

@@ -1,0 +1,19 @@
+/*  SETUP-CHILD | 1.0.0 | 210224 | setup-be/selector/setup-child-100/hide.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// EXTEND
+
+	%hide {
+		display: none;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.page.hide-entryheader .entry-header,
+	.page .hide-entryheader .entry-header,
+	.single.hide-entryheader .entry-header,
+	.single .hide-entryheader .entry-header {
+		@extend %hide !optional;
+	}

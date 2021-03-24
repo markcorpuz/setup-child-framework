@@ -1,0 +1,161 @@
+/* SETUP-BE | 1.0.0 | 210224 | setup-be/selector/setup-child-100/padding-all.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// SELECTORS
+
+	// TINY
+
+	.padding-tiny {
+		@extend %padding-tiny-top !optional;
+		@extend %padding-tiny-bottom !optional;
+		@extend %padding-tiny-left !optional;
+		@extend %padding-tiny-right !optional;
+	}
+	.padding-tiny-top {
+		@extend %padding-tiny-top !optional;
+	}
+	.padding-tiny-right {
+		@extend %padding-tiny-right !optional;
+	}
+	.padding-tiny-bottom {
+		@extend %padding-tiny-bottom !optional;
+	}
+	.padding-tiny-left {
+		@extend %padding-tiny-left !optional;
+	}
+
+	// SMALLER
+
+	.padding-smaller {
+		@extend %padding-smaller-top !optional;
+		@extend %padding-smaller-bottom !optional;
+		@extend %padding-smaller-left !optional;
+		@extend %padding-smaller-right !optional;
+	}
+	.padding-smaller-top {
+		@extend %padding-smaller-top !optional;
+	}
+	.padding-smaller-right {
+		@extend %padding-smaller-right !optional;
+	}
+	.padding-smaller-bottom {
+		@extend %padding-smaller-bottom !optional;
+	}
+	.padding-smaller-left {
+		@extend %padding-smaller-left !optional;
+	}
+
+	// NORMAL
+
+	.padding-normal {
+		@extend %padding-normal-top !optional;
+		@extend %padding-normal-bottom !optional;
+		@extend %padding-normal-left !optional;
+		@extend %padding-normal-right !optional;
+	}
+	.padding-normal-top {
+		@extend %padding-normal-top !optional;
+	}
+	.padding-normal-right {
+		@extend %padding-normal-right !optional;
+	}
+	.padding-normal-bottom {
+		@extend %padding-normal-bottom !optional;
+	}
+	.padding-normal-left {
+		@extend %padding-normal-left !optional;
+	}
+
+	// SMALL
+
+	.padding-small {
+		@extend %padding-small-top !optional;
+		@extend %padding-small-bottom !optional;
+		@extend %padding-small-left !optional;
+		@extend %padding-small-right !optional;
+	}
+	.padding-small-top {
+		@extend %padding-small-top !optional;
+	}
+	.padding-small-right {
+		@extend %padding-small-right !optional;
+	}
+	.padding-small-bottom {
+		@extend %padding-small-bottom !optional;
+	}
+	.padding-small-left {
+		@extend %padding-small-left !optional;
+	}
+
+	// MEDIUM
+
+	.padding-medium {
+		@extend %padding-medium-top !optional;
+		@extend %padding-medium-bottom !optional;
+		@extend %padding-medium-left !optional;
+		@extend %padding-medium-right !optional;
+	}
+	.padding-medium-top {
+		@extend %padding-medium-top !optional;
+	}
+	.padding-medium-right {
+		@extend %padding-medium-right !optional;
+	}
+	.padding-medium-bottom {
+		@extend %padding-medium-bottom !optional;
+	}
+	.padding-medium-left {
+		@extend %padding-medium-left !optional;
+	}
+
+	// LARGE
+
+	.padding-large {
+		@extend %padding-large-top !optional;
+		@extend %padding-large-bottom !optional;
+		@extend %padding-large-left !optional;
+		@extend %padding-large-right !optional;
+	}
+	.padding-large-top {
+		@extend %padding-large-top !optional;
+	}
+	.padding-large-right {
+		@extend %padding-large-right !optional;
+	}
+	.padding-large-bottom {
+		@extend %padding-large-bottom !optional;
+	}
+	.padding-large-left {
+		@extend %padding-large-left !optional;
+	}
+
+	// HUGE
+
+	.padding-huge {
+		@extend %padding-huge-top !optional;
+		@extend %padding-huge-bottom !optional;
+		@extend %padding-huge-left !optional;
+		@extend %padding-huge-right !optional;
+	}
+	.padding-huge-top {
+		@extend %padding-huge-top !optional;
+	}
+	.padding-huge-right {
+		@extend %padding-huge-right !optional;
+	}
+	.padding-huge-bottom {
+		@extend %padding-huge-bottom !optional;
+	}
+	.padding-huge-left {
+		@extend %padding-huge-left !optional;
+	}
+
+	// 2X
+
+	.padding-large2x-bottom {
+		@extend %padding-large2x-bottom !optional;
+	}
+	.padding-huge2x-bottom {
+		@extend %padding-huge2x-bottom !optional;
+	}

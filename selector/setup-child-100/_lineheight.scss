@@ -1,0 +1,74 @@
+/*  SETUP-CHILD | 1.0.0 | 210224 | setup-be/selector/setup-child-100/lineheight.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// EXTEND
+
+	%lineheight-xhuge {
+		line-height: 1;
+	}
+
+	%lineheight-huge {
+		line-height: 1;
+	}
+
+	%lineheight-large {
+		line-height: 1.125;
+	}
+
+	%lineheight-medium {
+		line-height: 1.25;
+	}
+
+	%lineheight-small {
+		line-height: 1.4;
+	}
+
+	%lineheight-default {
+		line-height: 1.55;
+	}
+
+	%lineheight-single {
+		line-height: 1;
+	}
+
+	%lineheight-double {
+		line-height: 2;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// RELATIVE
+
+	.lineheight-xhuge {
+		@extend %lineheight-xhuge !optional;
+	}
+
+	.lineheight-huge {
+		@extend %lineheight-huge !optional;
+	}
+
+	.lineheight-large {
+		@extend %lineheight-large !optional;
+	}
+
+	.lineheight-medium {
+		@extend %lineheight-medium !optional;
+	}
+
+	.lineheight-small {
+		@extend %lineheight-small !optional;
+	}
+
+	.lineheight-default {
+		@extend %lineheight-default !optional;
+	}
+
+	.lineheight-single {
+		@extend %lineheight-single !optional;
+	}
+
+	.lineheight-double {
+		@extend %lineheight-double !optional;
+	}

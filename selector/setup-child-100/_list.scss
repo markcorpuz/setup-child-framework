@@ -1,0 +1,131 @@
+/*  SETUP-CHILD | 1.0.0 | 210317 | setup-child/selector/setup-child-100/list.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// EXTEND
+
+	// LIST-WDESCRIPTION
+
+	%list-wdescription {
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	%list-wdescription-children {
+		list-style-type: none;
+	}
+
+	%list-wdescription-child {
+		padding-top: 0;
+		margin-top: 0.5rem;
+		border-left: 1px solid #f0f0f0;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// LIST-SIZES
+	.entry-content ul.fontsize-xhuge,
+	.entry-content ol.fontsize-xhuge {
+		@extend %text-7xl !optional;
+	}
+	.entry-content ul.fontsize-huge,
+	.entry-content ol.fontsize-huge {
+		@extend %text-5xl !optional;
+	}
+	.entry-content ul.fontsize-large,
+	.entry-content ol.fontsize-large {
+		@extend %text-4xl !optional;
+	}
+	.entry-content ul.fontsize-medium,
+	.entry-content ol.fontsize-medium {
+		@extend %text-2xl !optional;
+	}
+	.entry-content ul.fontsize-small,
+	.entry-content ol.fontsize-small {
+		@extend %text-xl !optional;
+	}
+	.entry-content ul.fontsize-default,
+	.entry-content ol.fontsize-default,
+	.entry-content ul.fontsize-normal,
+	.entry-content ol.fontsize-normal {
+		@extend %text-lg !optional;
+	}
+	.entry-content ul.fontsize-base,
+	.entry-content ol.fontsize-base {
+		@extend %text-base !optional;
+	}
+	.entry-content ul.fontsize-smaller,
+	.entry-content ol.fontsize-smaller {
+		@extend %text-sm !optional;
+	}
+	.entry-content ul.fontsize-tiny,
+	.entry-content ol.fontsize-tiny {
+		@extend %text-xs !optional;
+	}
+
+	// LIST-SIZES-VARIABLE
+	.entry-content ul.fontsize-medium-small,
+	.entry-content ol.fontsize-medium-small {
+		@extend %text-2xl !optional;
+
+		ul,
+		ol {
+			@extend %text-xl !optional;			
+		}
+	}
+	.entry-content ul.fontsize-normal-smaller,
+	.entry-content ol.fontsize-normal-smaller {
+		@extend %text-lg !optional;
+
+		ul,
+		ol {
+			@extend %text-sm !optional;			
+		}
+	}
+	.entry-content ul.fontsize-normal-tiny,
+	.entry-content ol.fontsize-normal-tiny {
+		@extend %text-lg !optional;
+
+		ul,
+		ol {
+			@extend %text-xs !optional;			
+		}
+	}
+	.entry-content ul.fontsize-smaller-tiny,
+	.entry-content ol.fontsize-smaller-tiny {
+		@extend %text-sm !optional;
+
+		ul,
+		ol {
+			@extend %text-xs !optional;			
+		}
+	}
+
+	// LIST-WDESCRIPTION
+
+	.entry-content ul.list-wdescription,
+	.entry-content ol.list-wdescription,
+	ul.list-wdescription,
+	ol.list-wdescription {
+		@extend %list-wdescription !optional;
+	}
+
+	.entry-content ul.list-wdescription ul,
+	.entry-content ol.list-wdescription ul,
+	.entry-content ul.list-wdescription ol,
+	.entry-content ol.list-wdescription ol {
+		@extend %list-wdescription-children !optional;
+	}
+
+	.entry-content ul.list-wdescription > li ul,
+	.entry-content ul.list-wdescription > li ol,
+	.entry-content ol.list-wdescription > li ul,
+	.entry-content ol.list-wdescription > li ol,
+	ul.list-wdescription > li ul,
+	ul.list-wdescription > li ol,
+	ol.list-wdescription > li ul,
+	ol.list-wdescription > li ol {
+		@extend %list-wdescription-child !optional;
+	}

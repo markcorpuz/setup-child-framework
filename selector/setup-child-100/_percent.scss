@@ -1,0 +1,130 @@
+/*  SETUP-CHILD | 1.0.0 | 210224 | setup-be/selector/setup-child-100/percent.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// EXTEND
+
+	%grid-column-span-5 {
+		grid-column: span 5;
+	}
+
+	%grid-column-span-4 {
+		grid-column: span 4;
+	}
+
+	%grid-column-span-3 {
+		grid-column: span 3;
+	}
+
+	%grid-column-span-2 {
+		grid-column: span 2;
+	}
+
+	%grid-column-span-1 {
+		grid-column: span 1;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	.full {
+
+		.grid-5columns > &,
+		.wp-block-group.group--grid-5columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-5 !optional;
+		}
+
+		.grid-4columns > &,
+		.wp-block-group.group--grid-4columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-4 !optional;
+		}
+
+		.grid-3columns > &,
+		.wp-block-group.group--grid-3columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-3 !optional;
+		}
+
+		.grid-2columns > &,
+		.wp-block-group.group--grid-2columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-2 !optional;
+		}
+
+	}
+
+	.half {
+
+		.grid-4columns > &,
+		.wp-block-group.group--grid-4columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-2 !optional;
+		}
+
+		.grid-2columns > &,
+		.wp-block-group.group--grid-2columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-1 !optional;
+		}
+
+	}
+
+	.third {
+
+		.grid-3columns > &,
+		.wp-block-group.group--grid-3columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-1 !optional;
+		}
+
+	}
+
+	.twothird {
+
+		.grid-3columns > &,
+		.wp-block-group.group--grid-3columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-2 !optional;
+		}
+
+	}
+
+	.threefourth {
+
+		.grid-4columns > &,
+		.wp-block-group.group--grid-4columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-3 !optional;
+		}
+
+	}
+
+	.fourth {
+
+		.grid-4columns > &,
+		.wp-block-group.group--grid-4columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-1 !optional;
+		}
+
+	}
+
+	.fifth {
+
+		.grid-5columns > &,
+		.wp-block-group.group--grid-5columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-1 !optional;
+		}
+
+	}
+
+	.twofifth {
+
+		.grid-5columns > &,
+		.wp-block-group.group--grid-5columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-2 !optional;
+		}
+
+	}
+
+	.threefifth {
+
+		.grid-5columns > &,
+		.wp-block-group.group--grid-5columns > .wp-block-group__inner-container > & {
+			@extend %grid-column-span-3 !optional;
+		}
+
+	}

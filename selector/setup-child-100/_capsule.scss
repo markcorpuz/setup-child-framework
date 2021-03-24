@@ -1,0 +1,98 @@
+/* SETUP-BE | 1.0.0 | 210317 | setup-child/selector/setup-child-100/capsule.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// EXTEND
+
+%capsule {
+	display: inline-block;
+	line-height: 1;
+}
+
+%capsule-tiny {
+	@extend %capsule !optional;
+	border-radius:4px;
+	@extend %padding-tiny-top !optional;
+	@extend %padding-tiny-bottom !optional;	
+	@extend %padding-smaller-left !optional;
+	@extend %padding-smaller-right !optional;
+}
+
+%capsule-smaller {
+	@extend %capsule !optional;
+	border-radius:4px;
+	@extend %padding-tiny-top !optional;
+	@extend %padding-tiny-bottom !optional;
+	@extend %padding-smaller-left !optional;
+	@extend %padding-smaller-right !optional;
+}
+
+%capsule-normal {
+	@extend %capsule !optional;
+	border-radius:6px;
+	@extend %padding-smaller-top !optional;
+	@extend %padding-smaller-bottom !optional;
+	@extend %padding-smaller-left !optional;
+	@extend %padding-smaller-right !optional;
+}
+
+%capsule-small {
+	@extend %capsule !optional;
+	border-radius:6px;
+	@extend %padding-smaller-top !optional;
+	@extend %padding-smaller-bottom !optional;
+	@extend %padding-smaller-left !optional;
+	@extend %padding-smaller-right !optional;
+}
+
+%capsule-medium {
+	@extend %capsule !optional;
+	border-radius:8px;
+	@extend %padding-smaller-top !optional;
+	@extend %padding-smaller-bottom !optional;
+	@extend %padding-normal-left !optional;
+	@extend %padding-normal-right !optional;
+}
+
+%capsule-large {
+	@extend %capsule !optional;
+	border-radius:8px;
+	@extend %padding-smaller-top !optional;
+	@extend %padding-smaller-bottom !optional;
+	@extend %padding-normal-left !optional;
+	@extend %padding-normal-right !optional;
+}
+
+// -------------------------------------
+// SELECTORS
+
+.capsule-tiny {
+	@extend %capsule !optional;
+	@extend %capsule-tiny !optional;
+}
+
+.capsule-smaller {
+	@extend %capsule !optional;
+	@extend %capsule-tiny !optional;
+}
+
+.capsule-normal,
+.capsule {
+	@extend %capsule-all !optional;
+	@extend %capsule-normal !optional;
+}
+
+.capsule-small {
+	@extend %capsule-all !optional;
+	@extend %capsule-small !optional;
+}
+
+.capsule-medium {
+	@extend %capsule-all !optional;
+	@extend %capsule-medium !optional;
+}
+
+.capsule-large {
+	@extend %capsule-all !optional;
+	@extend %capsule-large !optional;
+}

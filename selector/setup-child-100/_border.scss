@@ -1,0 +1,152 @@
+/*  SETUP-CHILD | 1.0.0 | 210317 | setup-child/selector/setup-child-100/border.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// GUIDE
+
+	// Space
+	// $space-zero: 0;
+	// $space-px: 0.0625rem;     // 1px;
+	// $space-2px: 0.125rem;     // 2px;
+	// $space-tiny: 0.25rem;     // 4px;
+	// $space-small: 0.5rem;     // 8px;
+	// $space-normal: 1rem;      // 16px;
+	// $space-medium: 1.5rem;    // 24px;
+	// $space-large: 2rem;       // 32px;
+	// $space-larger: 2.5rem;    // 40px;
+	// $space-huge: 3.125rem;    // 50px;
+
+// -------------------------------------
+// EXTEND
+
+	// BORDER
+	
+	%border {
+		border: 1px solid;
+	}
+	%border-dashed {
+		border: 1px dashed;
+	}
+
+	// SPACE ZERO
+	%border-zero {
+		border: 0;
+	}
+
+	// COLOR
+	%border-lightgray {
+		border-color: $grey_3;
+	}
+	%border-gray {
+		border-color: brand-color( 'grey' );
+	}
+	%border-darkgray {
+		border-color: $base-color;
+	}
+
+	// OUTLINE
+	%outline {
+		outline: 1px solid;
+	}
+	%outline-dashed {
+		outline: 1px dashed;
+	}
+
+	// OUTLINE COLOR
+	%outline-lightgray {
+		outline-color: $grey_3;
+	}
+	%outline-gray {
+		outline-color: brand-color( 'grey' );
+	}
+	%outline-darkgray {
+		outline-color: $base-color;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// BORDER
+
+	.border,
+	.border-lightgray,
+	.border-gray,
+	.border-darkgray {
+		@extend %border !optional;
+	}
+	.border-dashed	 {
+		@extend %border-dashed !optional;
+	}
+	.border-zero {
+		@extend %border-zero !optional;
+	}
+
+	// BORDER-COLOR
+
+	.border-lightgray {
+		@extend %border-lightgray !optional;
+
+		&.border-dashed {
+			@extend %border-dashed !optional;
+			@extend %border-lightgray !optional;
+		}
+	}
+	.border-gray {
+		@extend %border-gray !optional;
+
+		&.border-dashed {
+			@extend %border-dashed !optional;
+			@extend %border-gray !optional;
+		}
+	}
+	.border-darkgray {
+		@extend %border-darkgray !optional;
+
+		&.border-dashed {
+			@extend %border-dashed !optional;
+			@extend %border-darkgray !optional;
+		}
+	}
+
+	// OUTLINE
+
+	.outline,
+	.outline-lightgray,
+	.outline-gray,
+	.outline-darkgray {
+		@extend %outline !optional;
+	}
+	.outline-dashed	 {
+		@extend %outline-dashed !optional;
+	}
+	.outline-zero {
+		@extend %outline-zero !optional;
+	}
+
+	// OUTLINE-COLOR
+
+	.outline-lightgray {
+		@extend %outline-lightgray !optional;
+
+		&.outline-dashed {
+			@extend %outline-dashed !optional;
+			@extend %outline-lightgray !optional;
+		}
+	}
+	.outline-gray {
+		@extend %outline-gray !optional;
+
+		&.outline-dashed {
+			@extend %outline-dashed !optional;
+			@extend %outline-gray !optional;
+		}
+	}
+	.outline-darkgray {
+		@extend %outline-darkgray !optional;
+
+		&.outline-dashed {
+			@extend %outline-dashed !optional;
+			@extend %outline-darkgray !optional;
+		}
+	}

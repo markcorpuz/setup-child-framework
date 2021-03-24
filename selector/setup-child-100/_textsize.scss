@@ -1,0 +1,199 @@
+/*  SETUP-CHILD | 1.0.0 | 210224 | setup-be/selector/setup-child-100/textsize.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// VARIABLES
+
+// -------------------------------------
+// EXTEND
+
+	%text-xs {
+		font-size: 0.75rem;
+		line-height: 1rem;
+	}
+	%text-sm {
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+	}
+	%text-base {
+		@include font-sizes( 0.875rem, 1rem );
+		//font-size: 1rem;
+		line-height: 1.5rem;
+	}
+	%text-lg {
+		@include font-sizes( 1rem, 1.125rem );
+		//font-size: 1.125rem;
+		line-height: 1.75rem;
+	}
+	%text-xl {
+		@include font-sizes( 1.125rem, 1.25rem );
+		//font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+	%text-2xl {
+		@include font-sizes( 1.125rem, 1.25rem, 1.5rem );
+		//font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	%text-3xl {
+		@include font-sizes( 1.25rem, 1.5rem, 1.875rem );
+		//font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+	%text-4xl {
+		@include font-sizes( 1.5rem, 1.875rem, 2.25rem );
+		//font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+	%text-5xl {
+		@include font-sizes( 1.875rem, 2.25rem, 3rem );
+		//font-size: 3rem;
+		line-height: 1;
+	}
+	%text-6xl {
+		@include font-sizes( 2.25rem, 3rem, 3.75rem );
+		//font-size: 3.75rem;
+		line-height: 1;
+	}
+	%text-7xl {
+		@include font-sizes( 3rem, 3.75rem, 4.5rem );
+		//font-size: 4.5rem;
+		line-height: 1;
+	}
+	%text-8xl {
+		@include font-sizes( 3.75rem, 4.5rem, 6rem );
+		//font-size: 6rem;
+		line-height: 1;
+	}
+	%text-9xl {
+		@include font-sizes( 4.5rem, 6rem, 8rem );
+		//font-size: 8rem;
+		line-height: 1;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// TEXT-X
+	.text-xs {
+		@extend %text-xs !optional;
+		//font-size: 0.75rem;
+		//line-height: 1rem;
+	}
+	.text-sm {
+		@extend %text-sm !optional;
+		//font-size: 0.875rem;
+		//line-height: 1.25rem;
+	}
+	.text-base {
+		@extend %text-base !optional;
+		//font-size: 1rem;
+		//line-height: 1.5rem;
+	}
+	.text-lg {
+		@extend %text-lg !optional;
+		//font-size: 1.125rem;
+		//line-height: 1.75rem;
+	}
+	.text-xl {
+		@extend %text-xl !optional;
+		//font-size: 1.25rem;
+		//line-height: 1.75rem;
+	}
+	.text-2xl {
+		@extend %text-2xl !optional;
+		//font-size: 1.5rem;
+		//line-height: 2rem;
+	}
+	.text-3xl {
+		@extend %text-3xl !optional;
+		//font-size: 1.875rem;
+		//line-height: 2.25rem;
+	}
+	.text-4xl {
+		@extend %text-4xl !optional;
+		//font-size: 2.25rem;
+		//line-height: 2.5rem;
+	}
+	.text-5xl {
+		@extend %text-5xl !optional;
+		//font-size: 3rem;
+		//line-height: 1;
+	}
+	.text-6xl {
+		@extend %text-6xl !optional;
+		//font-size: 3.75rem;
+		//line-height: 1;
+	}
+	.text-7xl {
+		@extend %text-7xl !optional;
+		//font-size: 4.5rem;
+		//line-height: 1;
+	}
+	.text-8xl {
+		@extend %text-8xl !optional;
+		//font-size: 6rem;
+		//line-height: 1;
+	}
+	.text-9xl {
+		@extend %text-9xl !optional;
+		//font-size: 8rem;
+		//line-height: 1;
+	}
+
+	// FONTSIZE-X
+	.fontsize-xhuge {
+		@extend %text-7xl !optional;
+	}
+	.fontsize-huge {
+		@extend %text-5xl !optional;
+	}
+	.fontsize-large {
+		@extend %text-4xl !optional;
+	}
+	.fontsize-medium {
+		@extend %text-2xl !optional;
+	}
+	.fontsize-small {
+		@extend %text-xl !optional;
+	}
+	.fontsize-default,
+	.fontsize-normal {
+		@extend %text-lg !optional;
+	}
+	.fontsize-base {
+		@extend %text-base !optional;
+	}
+	.fontsize-smaller {
+		@extend %text-sm !optional;
+	}
+	.fontsize-tiny {
+		@extend %text-xs !optional;
+	}
+
+	// HAS-X-FONTSIZE
+	.has-huge-font-size {
+		@extend %text-5xl !optional;
+	}
+	.has-large-font-size {
+		@extend %text-4xl !optional;
+	}
+	.has-medium-font-size {
+		@extend %text-2xl !optional;
+	}
+	.has-small-font-size {
+		@extend %text-xl !optional;
+	}
+	.has-normal-font-size {
+		@extend %text-lg !optional;
+	}
+	.has-base-font-size {
+		@extend %text-base !optional;
+	}
+	.has-smaller-font-size {
+		@extend %text-sm !optional;
+	}
+	.has-tiny-font-size {
+		@extend %text-xs !optional;
+	}

@@ -1,0 +1,231 @@
+/*  SETUP-CHILD | 1.0.0 | 210218 | setup-be/selector/setup-child-100/grid.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// EXTEND
+
+	%grid {
+		display: grid;
+	}
+
+	%grid-gap {
+		grid-column-gap: 1.5rem;
+		grid-row-gap: 1.5rem;
+	}
+
+	%grid-p-zero {
+		margin-bottom: 0;
+	}
+
+	%grid-gap-zero {
+		grid-column-gap: 0;
+		grid-row-gap: 0;
+	}
+
+	%grid-column-gap-zero {
+		grid-column-gap: 0;
+	}
+
+	%grid-row-gap-zero {
+		grid-row-gap: 0;
+	}
+
+	%grid-content-sidebar {
+		grid-template-columns: 1fr 368px;
+		grid-column-gap: 2rem;
+	}
+
+	%grid-sidebar-content {
+		grid-template-columns: 368px 1fr;
+		grid-column-gap: 2rem;
+	}
+
+	%grid-5columns {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+
+		@include media("<=medium") {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include media("<=smaller") {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	%grid-4columns {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+
+		@include media("<=medium") {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include media("<=smaller") {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	%grid-3columns {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		@include media("<=medium") {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include media("<=smaller") {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	%grid-2columns {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		@include media("<=smaller") {
+			grid-template-columns: 1fr;
+		}
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	.grid-content-sidebar {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-content-sidebar !optional;
+	}
+	.wp-block-group.group--grid-content-sidebar > .wp-block-group__inner-container {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-content-sidebar !optional;
+	}
+
+	.grid-sidebar-content {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-sidebar-content !optional;
+	}
+	.wp-block-group.group--grid-sidebar-content > .wp-block-group__inner-container {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-sidebar-content !optional;
+	}
+
+	.grid-5columns {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-5columns !optional;
+	}
+
+	.wp-block-group.group--grid-5columns > .wp-block-group__inner-container {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-5columns !optional;
+	}
+
+	.grid-4columns {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-4columns !optional;
+	}
+
+	.wp-block-group.group--grid-4columns > .wp-block-group__inner-container {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-4columns !optional;
+	}
+
+	.grid-3columns {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-3columns !optional;
+	}
+
+	.wp-block-group.group--grid-3columns > .wp-block-group__inner-container {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-3columns !optional;
+	}
+
+	.grid-2columns {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-2columns !optional;
+	}
+
+	.wp-block-group.group--grid-2columns > .wp-block-group__inner-container {
+		@extend %grid !optional;
+		@extend %grid-gap !optional;
+		@extend %grid-2columns !optional;
+	}
+
+	.grid-p-zero {
+
+		&.grid-5columns p,
+		&.grid-4columns p,
+		&.grid-3columns p,
+		&.grid-2columns p {
+			@extend %grid-p-zero !optional;
+		}
+		&.wp-block-group.group--grid-5columns > .wp-block-group__inner-container > p,
+		&.wp-block-group.group--grid-4columns > .wp-block-group__inner-container > p,
+		&.wp-block-group.group--grid-3columns > .wp-block-group__inner-container > p,
+		&.wp-block-group.group--grid-2columns > .wp-block-group__inner-container > p, {
+			@extend %grid-p-zero !optional;
+		}
+
+	}
+
+	.grid-gap-zero {
+
+		&.grid-5columns,
+		&.grid-4columns,
+		&.grid-3columns,
+		&.grid-2columns {
+			@extend %grid-gap-zero !optional;
+		}
+		&.wp-block-group.group--grid-5columns > .wp-block-group__inner-container,
+		&.wp-block-group.group--grid-4columns > .wp-block-group__inner-container,
+		&.wp-block-group.group--grid-3columns > .wp-block-group__inner-container,
+		&.wp-block-group.group--grid-2columns > .wp-block-group__inner-container {
+			@extend %grid-gap-zero !optional;
+		}
+
+	}
+
+	.grid-column-gap-zero {
+
+		&.grid-5columns,
+		&.grid-4columns,
+		&.grid-3columns,
+		&.grid-2columns {
+			@extend %grid-column-gap-zero !optional;
+		}
+		&.wp-block-group.group--grid-5columns > .wp-block-group__inner-container,
+		&.wp-block-group.group--grid-4columns > .wp-block-group__inner-container,
+		&.wp-block-group.group--grid-3columns > .wp-block-group__inner-container,
+		&.wp-block-group.group--grid-2columns > .wp-block-group__inner-container {
+			@extend %grid-column-gap-zero !optional;
+		}
+
+	}
+
+	.grid-row-gap-zero {
+
+		&.grid-5columns,
+		&.grid-4columns,
+		&.grid-3columns,
+		&.grid-2columns {
+			@extend %grid-row-gap-zero !optional;
+		}
+		&.wp-block-group.group--grid-5columns > .wp-block-group__inner-container,
+		&.wp-block-group.group--grid-4columns > .wp-block-group__inner-container,
+		&.wp-block-group.group--grid-3columns > .wp-block-group__inner-container,
+		&.wp-block-group.group--grid-2columns > .wp-block-group__inner-container {
+			@extend %grid-row-gap-zero !optional;
+		}
+
+	}

@@ -1,0 +1,104 @@
+/* SETUP-BE | 1.0.0 | 200408 | setup-be/block/setup-be-100/group.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// EXTEND
+
+// -------------------------------------
+// SELECTORS
+
+	.wp-block-group {
+
+		&.fullscreen {
+			height: 100vh;
+		}
+
+		&.twothirds {
+			height: 66vh;
+		}
+
+		&.threefourths {
+			height: 75vh;
+		}
+
+		&.fourfifths {
+			height: 80vh;
+		}
+
+		&.margin-zero-figure figure {
+			margin-block-start: 0;
+			margin-block-end: 0;
+			margin-inline-start: 0;
+			margin-inline-end: 0;
+		}
+
+		&.alignfull,
+		&.margin-zero-y.alignfull,
+		&.margin-zero-vertical.alignfull {
+			@extend %margin-zero-top !optional;
+			@extend %margin-zero-bottom !optional;
+		}
+
+		.full-width-content &,
+		.content & {
+
+			&.alignfull {
+				@extend %margin-zero-top !optional;
+				@extend %margin-zero-bottom !optional;
+			}
+		}
+
+	}
+
+	.wp-block-group__inner-container {
+
+		.wp-block-group.inner-container_full & {
+			@extend %maxwidth-full !optional;
+			//max-width: 100%;
+		}
+
+		.wp-block-group.inner-container_large > & {
+			@extend %maxwidth-large !optional;
+			//max-width: 1200px;
+		}
+
+		.wp-block-group.inner-container_medium > & {
+			@extend %maxwidth-medium !optional;
+			//max-width: 992px;
+		}
+
+		.wp-block-group.inner-container_tablet > & {
+			@extend %maxwidth-tablet !optional;
+			//max-width: 512px;
+		}
+
+		.wp-block-group.inner-container_small > & {
+			@extend %maxwidth-small !optional;
+			//max-width: 512px;
+		}
+
+		.wp-block-group.inner-container_smaller > & {
+			@extend %maxwidth-smaller !optional;
+			//max-width: 425px;
+		}
+
+		.wp-block-group.inner-container_tiny > & {
+			@extend %maxwidth-tiny !optional;
+			//max-width: 360px;
+		}
+
+		.wp-block-group.inner-container_padding & {
+			@extend %padding-top !optional;
+			@extend %padding-bottom !optional;
+			@extend %padding-left !optional;
+			@extend %padding-right !optional;
+		}
+
+		.wp-block-group.inner-container_margin & {
+			@extend %margin-top !optional;
+			@extend %margin-bottom !optional;
+			@extend %margin-left !optional;
+			@extend %margin-right !optional;
+		}
+
+	}

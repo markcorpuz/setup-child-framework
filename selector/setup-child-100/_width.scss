@@ -1,0 +1,107 @@
+/*  SETUP-CHILD | 1.0.0 | 210224 | setup-be/selector/setup-child-100/width.scss
+---------------------------------------------------------------------------------------------------- */
+
+// -------------------------------------
+// EXTEND
+
+	%width-full {
+		width: 100%;
+	}
+	%maxwidth-full {
+		max-width: 100%;
+	}
+
+	%width-large {
+		width: map-get( $breakpoints, 'large' );
+	}
+	%maxwidth-large {
+		max-width: map-get( $breakpoints, 'large' );
+	}
+
+	%width-medium {
+		width: map-get( $breakpoints, 'medium' );
+	}
+	%maxwidth-medium {
+		max-width: map-get( $breakpoints, 'medium' );
+	}
+
+	%width-tablet {
+		width: map-get( $breakpoints, 'tablet' );
+	}
+	%maxwidth-tablet {
+		max-width: map-get( $breakpoints, 'tablet' );
+	}
+
+	%width-small {
+		width: map-get( $breakpoints, 'small' );
+	}
+	%maxwidth-small {
+		max-width: map-get( $breakpoints, 'small' );
+	}
+
+	%width-smaller {
+		width: map-get( $breakpoints, 'smaller' );
+	}
+	%maxwidth-smaller {
+		max-width: map-get( $breakpoints, 'smaller' );
+	}
+
+	%width-tiny {
+		width: map-get( $breakpoints, 'tiny' );
+	}
+	%maxwidth-tiny {
+		max-width: map-get( $breakpoints, 'tiny' );
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	.width-full {
+		@extend %width-full !optional;
+	}
+	.maxwidth-full {
+		@extend %maxwidth-full !optional;
+	}
+
+	.width-large {
+		@extend %width-large !optional;
+	}
+	.maxwidth-large {
+		@extend %maxwidth-large !optional;
+	}
+
+	.width-medium {
+		@extend %width-medium !optional;
+	}
+	.maxwidth-medium {
+		@extend %maxwidth-medium !optional;
+	}
+
+	.width-tablet {
+		@extend %width-tablet !optional;
+	}
+	.maxwidth-tablet {
+		@extend %maxwidth-tablet !optional;
+	}
+
+	.width-small {
+		@extend %width-small !optional;
+	}
+	.maxwidth-small {
+		@extend %maxwidth-small !optional;
+	}
+
+	.width-smaller {
+		@extend %width-smaller !optional;
+	}
+	.maxwidth-smaller {
+		@extend %maxwidth-smaller !optional;
+	}
+
+	.width-tiny {
+		@extend %width-tiny !optional;
+	}
+	.maxwidth-tiny {
+		@extend %maxwidth-tiny !optional;
+	}
